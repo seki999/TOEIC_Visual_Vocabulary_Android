@@ -17,7 +17,9 @@
 
 ## 尚未完成的验证
 
-本机 `adb devices` 无连接设备，也没有配置 Android 模拟器。`PlaybackLifecycleTest` 已添加，覆盖反复服务启动/停止与 Wake Lock 释放，编译通过与实际执行会分别记录。**未执行真机服务生命周期、安装启动、锁屏连续播放、电话/耳机控制和 30 分钟测试。** GitHub Actions 工作流未在 GitHub 执行，不声称远端构建已成功。
+本机 `adb devices` 无连接设备，也没有配置 Android 模拟器。`PlaybackLifecycleTest` 已添加，覆盖反复服务启动/停止与 Wake Lock 释放，编译通过与实际执行会分别记录。**未执行真机服务生命周期、安装启动、锁屏连续播放、电话/耳机控制和 30 分钟测试。**
+
+GitHub Actions 已于 2026-10-16 验证成功：[运行 #2](https://github.com/seki999/TOEIC_Visual_Vocabulary_Android/actions/runs/38850950626)，代码提交 `c113e0d`。前端检查、原生单元测试、Android Lint、应用和仪器测试 APK 编译及 Artifacts 上传均成功，产物为 `toeic-visual-vocabulary-Android-debug` 和 `android-test-reports`。首轮失败发生在 SDK 安装：setup-android v3 默认请求已下架的 `tools` 包；修复为显式安装 `platform-tools`，并固定 Ubuntu 24.04、升级 setup-java v5。云端成功不代表真机测试通过。
 
 ## 真机测试矩阵（逐项填入设备/系统/结果/日志）
 
