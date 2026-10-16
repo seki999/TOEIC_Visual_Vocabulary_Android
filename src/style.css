@@ -1,0 +1,379 @@
+:root {
+  font-family: system-ui, "Noto Sans SC", sans-serif;
+  color: #172f45;
+  background: #eef3f7;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  border: 1px solid #c5d3df;
+  background: #fff;
+  color: #18384f;
+  border-radius: 10px;
+  min-height: 44px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.4;
+}
+button[aria-pressed="true"],
+button[aria-selected="true"],
+button[aria-current="true"] {
+  background: #175f79;
+  color: #fff;
+  border-color: #175f79;
+}
+input,
+select {
+  max-width: 100%;
+  min-height: 44px;
+  border: 1px solid #b9cbd8;
+  border-radius: 8px;
+  padding: 6px;
+  background: white;
+  color: #172f45;
+}
+input[type="checkbox"] {
+  width: 24px;
+  min-height: 24px;
+  accent-color: #175f79;
+}
+input[type="number"] {
+  width: 100px;
+}
+input[type="color"] {
+  width: 70px;
+}
+.app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow: hidden;
+}
+.top {
+  background: #132b42;
+  color: white;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.top div {
+  flex: 1;
+}
+.top small {
+  display: block;
+  opacity: 0.75;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.mode,
+.tabs {
+  display: flex;
+  gap: 6px;
+  padding: 6px 12px;
+}
+.mode button,
+.tabs button {
+  flex: 1;
+}
+.tabs button {
+  min-height: 38px;
+}
+.error {
+  background: #ffe3df;
+  color: #7a2118;
+  padding: 6px 12px;
+  max-height: 120px;
+  overflow: auto;
+}
+.error button {
+  margin-left: 12px;
+}
+main {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  position: relative;
+}
+.word {
+  max-width: 1000px;
+  padding: clamp(18px, 4vw, 50px);
+  margin: auto;
+}
+.word h1 {
+  font-size: 2em;
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+  color: #11566f;
+}
+.word section {
+  margin: 24px 0;
+}
+.word section small {
+  font-size: 0.68em;
+  color: #60788c;
+}
+.word p {
+  line-height: 1.65;
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+.ipa {
+  color: #60788c;
+  font-size: 0.8em;
+}
+.picture {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #0c1825;
+  color: #fff;
+  min-height: 180px;
+}
+.image-tools {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  align-items: center;
+}
+.image-tools label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 6px;
+}
+.image-tools input {
+  width: 110px;
+}
+.image-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: block;
+  align-content: center;
+}
+.image-scroll img {
+  display: block;
+  object-fit: contain;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+}
+.image-scroll[data-missing]:after {
+  content: attr(data-missing);
+}
+.empty {
+  text-align: center;
+  padding: 32px;
+}
+.overlay {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  pointer-events: none;
+  max-height: 60%;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+.overlay p {
+  margin: 2px 0;
+}
+.overlay.top {
+  top: 68px;
+}
+.overlay.center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.overlay.bottom {
+  bottom: 12px;
+}
+.reveal {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+.fullscreen .image-tools {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.word-strip {
+  display: flex;
+  flex: none;
+  overflow: auto;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #dce7ee;
+  scrollbar-width: thin;
+}
+.word-strip button {
+  white-space: nowrap;
+  font-size: 13px;
+  min-height: 36px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #132b42;
+}
+footer button {
+  min-width: 44px;
+  max-width: 100px;
+  flex: 1;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.follow {
+  position: absolute;
+  right: 12px;
+  bottom: 108px;
+  box-shadow: 0 2px 14px #0003;
+}
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: #07162699;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+}
+.panel,
+.drawer {
+  background: #f7fafc;
+  width: min(100%, 600px);
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  padding-top: max(20px, env(safe-area-inset-top));
+  padding-bottom: max(24px, env(safe-area-inset-bottom));
+  box-shadow: -10px 0 40px #0002;
+}
+.drawer {
+  margin-right: auto;
+  max-width: 380px;
+}
+.panel header,
+.drawer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: -20px;
+  background: #f7fafc;
+  z-index: 1;
+}
+.panel label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 12px 0;
+  min-height: 36px;
+}
+.panel label:has(input[type="checkbox"]) {
+  justify-content: flex-start;
+}
+.panel h3 {
+  margin-top: 30px;
+  border-top: 1px solid #cedce6;
+  padding-top: 18px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.field span {
+  flex: 1;
+}
+.field label {
+  font-size: 14px;
+}
+.field button {
+  padding: 4px 12px;
+}
+.hint {
+  font-size: 13px;
+  color: #5b7182;
+  line-height: 1.6;
+}
+.drawer section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.drawer input {
+  width: 100%;
+}
+@media (orientation: landscape) and (max-height: 550px) {
+  .top {
+    padding: 4px 12px;
+  }
+  .top small {
+    display: inline;
+    margin-left: 12px;
+  }
+  .mode,
+  .tabs {
+    padding: 3px 12px;
+  }
+  .mode button,
+  .tabs button {
+    min-height: 32px;
+    padding: 3px;
+  }
+  .word-strip button {
+    min-height: 32px;
+  }
+  footer button {
+    min-height: 36px;
+  }
+  .word {
+    padding: 16px 32px;
+  }
+  .word section {
+    margin: 14px 0;
+  }
+}
+@media (min-width: 900px) {
+  .mode,
+  .tabs {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .word h1 {
+    font-size: 2.6em;
+  }
+  .picture:has(input[value="1"]) {
+    min-height: 200px;
+  }
+}

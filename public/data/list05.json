@@ -1,0 +1,1707 @@
+{
+  "id": "list05",
+  "title": "List 05",
+  "description": "TOEIC Vocabulary",
+  "items": [
+    {
+      "word": "acrophobia",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˌækrəˈfəʊbiə/",
+        "us": "/ˌækrəˈfoʊbiə/"
+      },
+      "meaning": "恐高症",
+      "collocation": {
+        "en": "suffer from acrophobia",
+        "zh": "患有恐高症"
+      },
+      "example": {
+        "en": "Because he suffers from acrophobia, he is afraid to stand near the edge of the balcony.",
+        "zh": "因为恐高，他不敢站到阳台边上。"
+      },
+      "id": "v000201",
+      "images": [
+        {
+          "id": "832070c5-7d78-4131-8c62-8937c6547309",
+          "src": "images/list05/v000201-832070c5-7d78-4131-8c62-8937c6547309.webp",
+          "alt": "acrophobia",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "99da0de0c3b9f5228c729a9e8a81979a2730e7dc8dbc3f5283e7c0d5da257ec8"
+    },
+    {
+      "word": "ferry",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈferi/",
+        "us": "/ˈferi/"
+      },
+      "meaning": "渡船；轮渡",
+      "collocation": {
+        "en": "take a ferry",
+        "zh": "乘渡船"
+      },
+      "example": {
+        "en": "We took a ferry to the island across the bay.",
+        "zh": "我们乘渡船去了对面的岛。"
+      },
+      "id": "v000202",
+      "images": [
+        {
+          "id": "52d7147a-1e43-4308-9459-6d2fd3c35d9e",
+          "src": "images/list05/v000202-52d7147a-1e43-4308-9459-6d2fd3c35d9e.webp",
+          "alt": "ferry",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "4cf08b2a284f88b4a5014af5665e40b3370a65a75856f4b473d72417b0592fd9"
+    },
+    {
+      "word": "ferry",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ˈferi/",
+        "us": "/ˈferi/"
+      },
+      "meaning": "渡运；运送",
+      "collocation": {
+        "en": "ferry passengers",
+        "zh": "运送乘客"
+      },
+      "example": {
+        "en": "The boat ferried passengers to the shore.",
+        "zh": "小船负责把乘客送到岸边。"
+      },
+      "id": "v000203",
+      "images": [
+        {
+          "id": "4683190e-51d7-4798-8024-c72ebbfa1176",
+          "src": "images/list05/v000203-4683190e-51d7-4798-8024-c72ebbfa1176.webp",
+          "alt": "ferry",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "e5794a6f6722efbd90f64b03af67afb522dcf8cdbbaf35bba22c6351eefcbb6e"
+    },
+    {
+      "word": "jeopardy",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈdʒepədi/",
+        "us": "/ˈdʒepərdi/"
+      },
+      "meaning": "危险；危机",
+      "collocation": {
+        "en": "in jeopardy",
+        "zh": "处于危险中"
+      },
+      "example": {
+        "en": "The lack of funding put the entire project in jeopardy.",
+        "zh": "资金不足使整个项目陷入危险。"
+      },
+      "id": "v000204",
+      "images": [
+        {
+          "id": "d3d27ac5-8ddc-4a58-b5bb-19feb1167473",
+          "src": "images/list05/v000204-d3d27ac5-8ddc-4a58-b5bb-19feb1167473.webp",
+          "alt": "jeopardy",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "407b1645b391506853869d5c56ca6389353bcf077db31242f476ff375595966f"
+    },
+    {
+      "word": "trespass",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ˈtrespəs/",
+        "us": "/ˈtrespæs/"
+      },
+      "meaning": "非法进入；侵入",
+      "collocation": {
+        "en": "trespass on private property",
+        "zh": "擅闯私人土地"
+      },
+      "example": {
+        "en": "Do not trespass on private property.",
+        "zh": "禁止擅自进入私人土地。"
+      },
+      "id": "v000205",
+      "images": [
+        {
+          "id": "151b2d65-69c8-4b4c-b9db-f1c556929125",
+          "src": "images/list05/v000205-151b2d65-69c8-4b4c-b9db-f1c556929125.webp",
+          "alt": "trespass",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "6b719e9c7f4f70ace231b86e0fb069c550a00f974b84a3b825a45a932efd1a73"
+    },
+    {
+      "word": "trespass",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈtrespəs/",
+        "us": "/ˈtrespæs/"
+      },
+      "meaning": "非法侵入",
+      "collocation": {
+        "en": "criminal trespass",
+        "zh": "非法侵入罪"
+      },
+      "example": {
+        "en": "He was charged with criminal trespass.",
+        "zh": "他因非法侵入而受到指控。"
+      },
+      "id": "v000206",
+      "images": [
+        {
+          "id": "df3f95d3-8f1c-4a2f-9eec-9b5e00fe6c5a",
+          "src": "images/list05/v000206-df3f95d3-8f1c-4a2f-9eec-9b5e00fe6c5a.webp",
+          "alt": "trespass",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "c7fa5ce237f247b2d42ab8e69e97059f48db4a76942f7761eddf630665ed9214"
+    },
+    {
+      "word": "trek",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/trek/",
+        "us": "/trek/"
+      },
+      "meaning": "长途跋涉；艰苦旅程",
+      "collocation": {
+        "en": "a long trek",
+        "zh": "长途跋涉"
+      },
+      "example": {
+        "en": "They reached the village after a long trek.",
+        "zh": "他们经过长途跋涉才到达村庄。"
+      },
+      "id": "v000207",
+      "images": [
+        {
+          "id": "86b45773-bf27-4e5d-88e2-2d112441e539",
+          "src": "images/list05/v000207-86b45773-bf27-4e5d-88e2-2d112441e539.webp",
+          "alt": "trek",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "9e439f43098532c26bd1fcea2de6a3f5563937ce64452e90f6138cc5caba771e"
+    },
+    {
+      "word": "trek",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/trek/",
+        "us": "/trek/"
+      },
+      "meaning": "长途跋涉",
+      "collocation": {
+        "en": "trek through",
+        "zh": "徒步穿越……"
+      },
+      "example": {
+        "en": "We spent two days trekking through the mountains.",
+        "zh": "我们花了两天徒步穿越山区。"
+      },
+      "id": "v000208",
+      "images": [
+        {
+          "id": "e26e0d4e-3951-4617-b291-0fea421a45ae",
+          "src": "images/list05/v000208-e26e0d4e-3951-4617-b291-0fea421a45ae.webp",
+          "alt": "trek",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "db7823a0ec92b4881af0c3879bcd0748460aa1c60406a074055dfc949bd03058"
+    },
+    {
+      "word": "casualty",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈkæʒuəlti/",
+        "us": "/ˈkæʒuəlti/"
+      },
+      "meaning": "伤亡人员",
+      "collocation": {
+        "en": "civilian casualties",
+        "zh": "平民伤亡"
+      },
+      "example": {
+        "en": "The conflict caused heavy civilian casualties.",
+        "zh": "冲突造成了严重的平民伤亡。"
+      },
+      "id": "v000209",
+      "images": [
+        {
+          "id": "ba8ff909-15c5-47bf-8689-1c386fe018da",
+          "src": "images/list05/v000209-ba8ff909-15c5-47bf-8689-1c386fe018da.webp",
+          "alt": "casualty",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "d44abcf4214c742bf294c30a185bdfa5008f9ce831cff36c1b6bcfa290a02e41"
+    },
+    {
+      "word": "casualty",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈkæʒuəlti/",
+        "us": "/ˈkæʒuəlti/"
+      },
+      "meaning": "受损者；牺牲品",
+      "collocation": {
+        "en": "a casualty of",
+        "zh": "……的牺牲品"
+      },
+      "example": {
+        "en": "The small shop became a casualty of the recession.",
+        "zh": "这家小店成了经济衰退的牺牲品。"
+      },
+      "id": "v000210",
+      "images": [
+        {
+          "id": "0501b9bd-1ecf-4b97-b62e-32660737918a",
+          "src": "images/list05/v000210-0501b9bd-1ecf-4b97-b62e-32660737918a.webp",
+          "alt": "casualty",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "96c4579d121941852016dd44455e9014d45f34b8640bdb69530680a95a0e005c"
+    },
+    {
+      "word": "collide",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/kəˈlaɪd/",
+        "us": "/kəˈlaɪd/"
+      },
+      "meaning": "相撞；碰撞",
+      "collocation": {
+        "en": "collide with",
+        "zh": "与……相撞"
+      },
+      "example": {
+        "en": "Two cars collided at the intersection.",
+        "zh": "两辆车在十字路口相撞了。"
+      },
+      "id": "v000211",
+      "images": [
+        {
+          "id": "048ed498-4c1e-4f5e-8ab6-3d5d3067ff62",
+          "src": "images/list05/v000211-048ed498-4c1e-4f5e-8ab6-3d5d3067ff62.webp",
+          "alt": "collide",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "e56917ad43e2b53346445dcefe46508bce5617a980b6451de0ed7d33e1854a8b"
+    },
+    {
+      "word": "embargo",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ɪmˈbɑːɡəʊ/",
+        "us": "/ɪmˈbɑːrɡoʊ/"
+      },
+      "meaning": "禁运；贸易禁令",
+      "collocation": {
+        "en": "impose an embargo on",
+        "zh": "对……实施禁运"
+      },
+      "example": {
+        "en": "The country decided to impose an embargo on the goods.",
+        "zh": "该国决定对相关商品实施出口禁运。"
+      },
+      "id": "v000212",
+      "images": [
+        {
+          "id": "a3018dcd-5d9c-4c49-ab50-2472a5f1036b",
+          "src": "images/list05/v000212-a3018dcd-5d9c-4c49-ab50-2472a5f1036b.webp",
+          "alt": "embargo",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "f63bf6d0a5a0c2ea8b496b71d1889472abffbee45f1ba0f5988b66d789ccd60a"
+    },
+    {
+      "word": "embargo",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɪmˈbɑːɡəʊ/",
+        "us": "/ɪmˈbɑːrɡoʊ/"
+      },
+      "meaning": "禁止贸易；禁止发布",
+      "collocation": {
+        "en": "embargo publication",
+        "zh": "禁止提前发布"
+      },
+      "example": {
+        "en": "Publication of the report was embargoed until Monday.",
+        "zh": "这份报告在周一之前不得发布。"
+      },
+      "id": "v000213",
+      "images": [
+        {
+          "id": "f3aac1df-31f9-425a-b0d5-4fb9b8f92383",
+          "src": "images/list05/v000213-f3aac1df-31f9-425a-b0d5-4fb9b8f92383.webp",
+          "alt": "embargo",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "93fdfea8f835d804a2189789d2c621c3b9d645a6c6ea784630cbc6c514403474"
+    },
+    {
+      "word": "subtraction",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/səbˈtrækʃən/",
+        "us": "/səbˈtrækʃən/"
+      },
+      "meaning": "减法；减去",
+      "collocation": {
+        "en": "addition and subtraction",
+        "zh": "加法和减法"
+      },
+      "example": {
+        "en": "The children are learning basic addition and subtraction.",
+        "zh": "孩子们正在学习基本的加法和减法。"
+      },
+      "id": "v000214",
+      "images": [
+        {
+          "id": "22bd1c32-e280-42e7-86b0-ff447fbab236",
+          "src": "images/list05/v000214-22bd1c32-e280-42e7-86b0-ff447fbab236.webp",
+          "alt": "subtraction",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "957ad20be85362a6341f5df995b237fb51501811b45eed7049834b46b0de3d2f"
+    },
+    {
+      "word": "vapid",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ˈvæpɪd/",
+        "us": "/ˈvæpɪd/"
+      },
+      "meaning": "乏味的；空洞的",
+      "collocation": {
+        "en": "vapid conversation",
+        "zh": "乏味空洞的谈话"
+      },
+      "example": {
+        "en": "The meeting turned into a vapid discussion.",
+        "zh": "会议最终变成了一场空洞而乏味的讨论。"
+      },
+      "id": "v000215",
+      "images": [
+        {
+          "id": "30ea8cf8-ea9d-43f3-aa10-4c0a30bef8a4",
+          "src": "images/list05/v000215-30ea8cf8-ea9d-43f3-aa10-4c0a30bef8a4.webp",
+          "alt": "vapid",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "3f50a6624979d01c93a50dbaf54498e3d0f6dc865183ad09afdbd97648c2ba6a"
+    },
+    {
+      "word": "pact",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/pækt/",
+        "us": "/pækt/"
+      },
+      "meaning": "协定；条约",
+      "collocation": {
+        "en": "sign a pact",
+        "zh": "签署协议"
+      },
+      "example": {
+        "en": "The two companies signed a cooperation pact.",
+        "zh": "两家公司签署了一项合作协议。"
+      },
+      "id": "v000216",
+      "images": [
+        {
+          "id": "7ec08500-c751-4fe6-9f5f-572bd993b4c2",
+          "src": "images/list05/v000216-7ec08500-c751-4fe6-9f5f-572bd993b4c2.webp",
+          "alt": "pact",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "f899b63a4cb6bfc1689738dfa662be1dd4cf2871e086de892d797b1ad956ff10"
+    },
+    {
+      "word": "groom",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɡruːm/",
+        "us": "/ɡruːm/"
+      },
+      "meaning": "梳洗；给动物梳毛",
+      "collocation": {
+        "en": "groom a horse",
+        "zh": "给马梳毛"
+      },
+      "example": {
+        "en": "She grooms the horse every morning.",
+        "zh": "她每天早晨都会给马梳毛。"
+      },
+      "id": "v000217",
+      "images": [
+        {
+          "id": "ea267587-076d-45b6-9359-ccba49fd384e",
+          "src": "images/list05/v000217-ea267587-076d-45b6-9359-ccba49fd384e.webp",
+          "alt": "groom",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "67c791a3ab4bab7840ec3c9f7cb84c392631d1e48e135535e6b5b64436e0e7c2"
+    },
+    {
+      "word": "groom",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɡruːm/",
+        "us": "/ɡruːm/"
+      },
+      "meaning": "培养；训练（某人担任某职位）",
+      "collocation": {
+        "en": "groom someone for",
+        "zh": "培养某人担任……"
+      },
+      "example": {
+        "en": "The company is grooming her for a management position.",
+        "zh": "公司正在培养她接任管理职位。"
+      },
+      "id": "v000218",
+      "images": [
+        {
+          "id": "6e9c7001-29cc-48e0-bd8a-d738dcd627fc",
+          "src": "images/list05/v000218-6e9c7001-29cc-48e0-bd8a-d738dcd627fc.webp",
+          "alt": "groom",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "b13ce7e8098add3b994d3f7318a00622265e2dd7d601547ebb959656d3695af1"
+    },
+    {
+      "word": "groom",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ɡruːm/",
+        "us": "/ɡruːm/"
+      },
+      "meaning": "新郎",
+      "collocation": {
+        "en": "bride and groom",
+        "zh": "新娘和新郎"
+      },
+      "example": {
+        "en": "The bride and groom thanked their guests.",
+        "zh": "新娘和新郎向宾客表示感谢。"
+      },
+      "id": "v000219",
+      "images": [
+        {
+          "id": "a91d35b2-8b3c-4edd-9b24-25e449f1631d",
+          "src": "images/list05/v000219-a91d35b2-8b3c-4edd-9b24-25e449f1631d.webp",
+          "alt": "groom",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "86398416da5152e02d5c4e9ac40b615bd84b93136bd0c43f2bdb1b4f7ec954f1"
+    },
+    {
+      "word": "circumference",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/səˈkʌmfərəns/",
+        "us": "/sərˈkʌmfərəns/"
+      },
+      "meaning": "圆周；周长",
+      "collocation": {
+        "en": "measure the circumference",
+        "zh": "测量周长"
+      },
+      "example": {
+        "en": "The students measured the circumference of the circle.",
+        "zh": "学生们测量了圆的周长。"
+      },
+      "id": "v000220",
+      "images": [
+        {
+          "id": "a69ad71b-0038-4ed8-834e-ab50a31f8e7c",
+          "src": "images/list05/v000220-a69ad71b-0038-4ed8-834e-ab50a31f8e7c.webp",
+          "alt": "circumference",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "928940ccd7d7cd6f951b2f60ddba5bf6b4520e0bf26255e1a99cb5b1fa630926"
+    },
+    {
+      "word": "neutrality",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/njuːˈtræləti/",
+        "us": "/nuːˈtræləti/"
+      },
+      "meaning": "中立；中立状态",
+      "collocation": {
+        "en": "maintain neutrality",
+        "zh": "保持中立"
+      },
+      "example": {
+        "en": "The organization tried to maintain neutrality in the dispute.",
+        "zh": "该组织在争议中努力保持中立。"
+      },
+      "id": "v000221",
+      "images": [
+        {
+          "id": "fceb76b7-63c9-4a37-a16c-7cf55e81b4bd",
+          "src": "images/list05/v000221-fceb76b7-63c9-4a37-a16c-7cf55e81b4bd.webp",
+          "alt": "neutrality",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "26c534e3d8c8c10f48b325ae598f4baf4d3b4bc17aa4c1e1fc1bed3aa689549c"
+    },
+    {
+      "word": "snap",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/snæp/",
+        "us": "/snæp/"
+      },
+      "meaning": "突然折断；啪地断开",
+      "collocation": {
+        "en": "snap in two",
+        "zh": "折成两半"
+      },
+      "example": {
+        "en": "The branch snapped in two in the strong wind.",
+        "zh": "树枝在强风中啪的一声断成了两截。"
+      },
+      "id": "v000222",
+      "images": [
+        {
+          "id": "52141095-1468-43de-b2ad-80e418fc87d9",
+          "src": "images/list05/v000222-52141095-1468-43de-b2ad-80e418fc87d9.webp",
+          "alt": "snap",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "2ddb38b96daa9c5b8883c81ac6cd8f2de9fb542bfecd89064d8824afec184e71"
+    },
+    {
+      "word": "snap",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/snæp/",
+        "us": "/snæp/"
+      },
+      "meaning": "快速拍照",
+      "collocation": {
+        "en": "snap a photo",
+        "zh": "快速拍一张照片"
+      },
+      "example": {
+        "en": "She snapped a photo with her phone.",
+        "zh": "她用手机迅速拍了一张照片。"
+      },
+      "id": "v000223",
+      "images": [
+        {
+          "id": "39a28843-aaaf-4a65-87e1-f2f6c7ec6c5c",
+          "src": "images/list05/v000223-39a28843-aaaf-4a65-87e1-f2f6c7ec6c5c.webp",
+          "alt": "snap",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "03a09400d99ca226437a07dd87ed1616b0f059d001032ac51a0566337270a62b"
+    },
+    {
+      "word": "snap",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/snæp/",
+        "us": "/snæp/"
+      },
+      "meaning": "骤冷；突然变化",
+      "collocation": {
+        "en": "a cold snap",
+        "zh": "寒潮；骤冷"
+      },
+      "example": {
+        "en": "There may be a cold snap this weekend.",
+        "zh": "本周末可能会有一次短暂寒潮。"
+      },
+      "id": "v000224",
+      "images": [
+        {
+          "id": "cd77e7c1-4868-4030-89a0-340a9f85d60a",
+          "src": "images/list05/v000224-cd77e7c1-4868-4030-89a0-340a9f85d60a.webp",
+          "alt": "snap",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "53379639c91bb8bb8a3742ce49f19c918b01a097f1b3f2aef5b47037e48b4218"
+    },
+    {
+      "word": "exterminate",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɪkˈstɜːmɪneɪt/",
+        "us": "/ɪkˈstɜːrmɪneɪt/"
+      },
+      "meaning": "消灭；根除",
+      "collocation": {
+        "en": "exterminate pests",
+        "zh": "消灭害虫"
+      },
+      "example": {
+        "en": "The company hired professionals to exterminate pests in the warehouse.",
+        "zh": "公司请专业人员来消灭仓库里的害虫。"
+      },
+      "id": "v000225",
+      "images": [
+        {
+          "id": "43237f1c-4da4-4385-85eb-f9d59a3b3c7c",
+          "src": "images/list05/v000225-43237f1c-4da4-4385-85eb-f9d59a3b3c7c.webp",
+          "alt": "exterminate",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "769094fc5e73f0e1b3973cc9449da564a79b6b318cbeb9a57f1841f561ed0d10"
+    },
+    {
+      "word": "virtue",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈvɜːtʃuː/",
+        "us": "/ˈvɜːrtʃuː/"
+      },
+      "meaning": "美德；优点",
+      "collocation": {
+        "en": "by virtue of",
+        "zh": "凭借；由于"
+      },
+      "example": {
+        "en": "He got the position by virtue of his extensive experience.",
+        "zh": "他凭借丰富的经验获得了这个职位。"
+      },
+      "id": "v000226",
+      "images": [
+        {
+          "id": "9985dc3e-e5f9-408c-a298-d325287f30d9",
+          "src": "images/list05/v000226-9985dc3e-e5f9-408c-a298-d325287f30d9.webp",
+          "alt": "virtue",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "b5cf27ba0a14037dd86228508ef2b7fcb3c14c471f260185c9c738e5848d2ddd"
+    },
+    {
+      "word": "tranquility",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/træŋˈkwɪləti/",
+        "us": "/træŋˈkwɪləti/"
+      },
+      "meaning": "宁静；安宁",
+      "collocation": {
+        "en": "peace and tranquility",
+        "zh": "平静与安宁"
+      },
+      "example": {
+        "en": "She enjoys the peace and tranquility of the countryside.",
+        "zh": "她喜欢乡村的平静与安宁。"
+      },
+      "id": "v000227",
+      "images": [
+        {
+          "id": "530435e3-1f47-4a7b-abad-0c88c023eeb1",
+          "src": "images/list05/v000227-530435e3-1f47-4a7b-abad-0c88c023eeb1.webp",
+          "alt": "tranquility",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "94dec868c7d623a3bc858480bd87f02b6e457d63c73da414c4bc004fa67875d0"
+    },
+    {
+      "word": "legible",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ˈledʒəbl/",
+        "us": "/ˈledʒəbl/"
+      },
+      "meaning": "清晰可读的；字迹清楚的",
+      "collocation": {
+        "en": "legible handwriting",
+        "zh": "清晰的字迹"
+      },
+      "example": {
+        "en": "Please make sure your handwriting is legible.",
+        "zh": "请确保你的字迹清晰可读。"
+      },
+      "id": "v000228",
+      "images": [
+        {
+          "id": "5ad15f86-7cac-4753-bd23-5b62f4015a06",
+          "src": "images/list05/v000228-5ad15f86-7cac-4753-bd23-5b62f4015a06.webp",
+          "alt": "legible",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "a130102d05be17a36ea2647206684b0d0740f80c1507c6fb2d86514040964afb"
+    },
+    {
+      "word": "lodge",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/lɒdʒ/",
+        "us": "/lɑːdʒ/"
+      },
+      "meaning": "小旅馆；山林小屋",
+      "collocation": {
+        "en": "ski lodge",
+        "zh": "滑雪度假小屋"
+      },
+      "example": {
+        "en": "We stayed for two nights at a ski lodge near the slopes.",
+        "zh": "我们在滑雪场附近的一家小旅馆住了两晚。"
+      },
+      "id": "v000229",
+      "images": [
+        {
+          "id": "5cf0e36c-2882-4934-ab70-f60cacabd9ef",
+          "src": "images/list05/v000229-5cf0e36c-2882-4934-ab70-f60cacabd9ef.webp",
+          "alt": "lodge",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "508462f4ab3927697a7300888375451a67afffe4e58adf8c54b06830136e4cc8"
+    },
+    {
+      "word": "lodge",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/lɒdʒ/",
+        "us": "/lɑːdʒ/"
+      },
+      "meaning": "正式提出；提交",
+      "collocation": {
+        "en": "lodge a complaint",
+        "zh": "提出投诉"
+      },
+      "example": {
+        "en": "The customer lodged a complaint with the hotel.",
+        "zh": "顾客向酒店正式提出了投诉。"
+      },
+      "id": "v000230",
+      "images": [
+        {
+          "id": "40897ad9-3f26-47d7-aad9-243be19f70b8",
+          "src": "images/list05/v000230-40897ad9-3f26-47d7-aad9-243be19f70b8.webp",
+          "alt": "lodge",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "6159a880b7949075d28554fdf26e21c7af7fdb050f75c55cfcca289b632ad88d"
+    },
+    {
+      "word": "recreation",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˌrekriˈeɪʃn/",
+        "us": "/ˌrekriˈeɪʃn/"
+      },
+      "meaning": "娱乐；消遣",
+      "collocation": {
+        "en": "recreation facilities",
+        "zh": "娱乐设施"
+      },
+      "example": {
+        "en": "The community has excellent recreation facilities.",
+        "zh": "这个社区有完善的娱乐设施。"
+      },
+      "id": "v000231",
+      "images": [
+        {
+          "id": "e606ecfa-e620-4cf7-9abc-2e141413c313",
+          "src": "images/list05/v000231-e606ecfa-e620-4cf7-9abc-2e141413c313.webp",
+          "alt": "recreation",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "280cb7566273afcc633e11f0c01dc4811e701abe84fdc8ebf0dce265d5565b8d"
+    },
+    {
+      "word": "exotic",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ɪɡˈzɒtɪk/",
+        "us": "/ɪɡˈzɑːtɪk/"
+      },
+      "meaning": "异国情调的；奇异的",
+      "collocation": {
+        "en": "exotic destination",
+        "zh": "充满异国情调的目的地"
+      },
+      "example": {
+        "en": "They chose an exotic island destination for their vacation.",
+        "zh": "他们选择了一个充满异国情调的海岛作为度假地。"
+      },
+      "id": "v000232",
+      "images": [
+        {
+          "id": "82c68661-ec6b-42a2-86d6-83cdfe45a909",
+          "src": "images/list05/v000232-82c68661-ec6b-42a2-86d6-83cdfe45a909.webp",
+          "alt": "exotic",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "184ac2acea1ecc6d998d40c5578307b78a0c3745e55704c2cd37de53d03c147f"
+    },
+    {
+      "word": "retirement",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/rɪˈtaɪəmənt/",
+        "us": "/rɪˈtaɪərmənt/"
+      },
+      "meaning": "退休；退休生活",
+      "collocation": {
+        "en": "retirement plan",
+        "zh": "退休计划"
+      },
+      "example": {
+        "en": "He is making a long-term financial plan for retirement.",
+        "zh": "他正在为退休生活制定长期财务计划。"
+      },
+      "id": "v000233",
+      "images": [
+        {
+          "id": "bd4046ee-f9bb-4c02-9484-8d5ab04802c7",
+          "src": "images/list05/v000233-2cbdf58f-4ca1-42f4-a01a-c34f64e4b623.webp",
+          "alt": "retirement",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "92b257f9ca4833579eedfba1f54c2b25334949ea232dc376dbea95ea0dfcdb9c"
+    },
+    {
+      "word": "legacy",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈleɡəsi/",
+        "us": "/ˈleɡəsi/"
+      },
+      "meaning": "遗产；遗赠物",
+      "collocation": {
+        "en": "leave a legacy",
+        "zh": "留下遗产/影响"
+      },
+      "example": {
+        "en": "The scientist left an important academic legacy.",
+        "zh": "这位科学家留下了重要的学术遗产。"
+      },
+      "id": "v000234",
+      "images": [
+        {
+          "id": "0fa5c2a6-6d01-4670-8570-494a40d74b97",
+          "src": "images/list05/v000234-0fa5c2a6-6d01-4670-8570-494a40d74b97.webp",
+          "alt": "legacy",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "f900289c53b20ccb93f619fcf211688df3450e495c5056e54766b224c2997a98"
+    },
+    {
+      "word": "legacy",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ˈleɡəsi/",
+        "us": "/ˈleɡəsi/"
+      },
+      "meaning": "旧有的；遗留的",
+      "collocation": {
+        "en": "legacy system",
+        "zh": "遗留系统"
+      },
+      "example": {
+        "en": "The company plans to gradually replace its legacy systems.",
+        "zh": "公司计划逐步替换旧有系统。"
+      },
+      "id": "v000235",
+      "images": [
+        {
+          "id": "d597b7ef-d736-4a95-8185-418df131e39e",
+          "src": "images/list05/v000235-d597b7ef-d736-4a95-8185-418df131e39e.webp",
+          "alt": "legacy",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "74765a3024a2bf40599ac0505c9f11f63d6560c201d9ee9d0be8024e26633a89"
+    },
+    {
+      "word": "gush",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɡʌʃ/",
+        "us": "/ɡʌʃ/"
+      },
+      "meaning": "喷涌；大量流出",
+      "collocation": {
+        "en": "gush out",
+        "zh": "喷涌而出"
+      },
+      "example": {
+        "en": "Water gushed out of the broken pipe.",
+        "zh": "水从破裂的管道中喷涌而出。"
+      },
+      "id": "v000236",
+      "images": [
+        {
+          "id": "c42fa4f5-389b-4a0e-862f-0ab98f19b205",
+          "src": "images/list05/v000236-c42fa4f5-389b-4a0e-862f-0ab98f19b205.webp",
+          "alt": "gush",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "7e6698c936aaacb73900a23663cdc8428261ad4698ad73759fad533557b4e4c6"
+    },
+    {
+      "word": "gush",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ɡʌʃ/",
+        "us": "/ɡʌʃ/"
+      },
+      "meaning": "滔滔不绝地称赞",
+      "collocation": {
+        "en": "gush about/over",
+        "zh": "热情称赞……"
+      },
+      "example": {
+        "en": "She gushed about the performance.",
+        "zh": "她兴奋地称赞了那场演出。"
+      },
+      "id": "v000237",
+      "images": [
+        {
+          "id": "65feabe0-1e28-43db-9b34-022fda2687a3",
+          "src": "images/list05/v000237-65feabe0-1e28-43db-9b34-022fda2687a3.webp",
+          "alt": "gush",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "f8237e6d52f524f82b0c679dd779dcf43b8eabba1e8ab9beebaf41c2252944a1"
+    },
+    {
+      "word": "muggy",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ˈmʌɡi/",
+        "us": "/ˈmʌɡi/"
+      },
+      "meaning": "闷热潮湿的",
+      "collocation": {
+        "en": "hot and muggy",
+        "zh": "炎热而闷湿"
+      },
+      "example": {
+        "en": "It is hot and muggy today.",
+        "zh": "今天又热又闷，很不舒服。"
+      },
+      "id": "v000238",
+      "images": [
+        {
+          "id": "3f8319e8-faba-4129-a46a-0c15a743b1cd",
+          "src": "images/list05/v000238-3f8319e8-faba-4129-a46a-0c15a743b1cd.webp",
+          "alt": "muggy",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "2039c1b520e6bb97c1ca7930782526349107cac3af71ae6cbf806f31b96d8ccd"
+    },
+    {
+      "word": "precipitation",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/prɪˌsɪpɪˈteɪʃn/",
+        "us": "/prɪˌsɪpɪˈteɪʃn/"
+      },
+      "meaning": "降水；降水量",
+      "collocation": {
+        "en": "heavy precipitation",
+        "zh": "大量降水"
+      },
+      "example": {
+        "en": "Heavy precipitation is expected in the mountains.",
+        "zh": "山区预计会有大量降水。"
+      },
+      "id": "v000239",
+      "images": [
+        {
+          "id": "62260490-61c3-476a-951b-d14386d84f9e",
+          "src": "images/list05/v000239-62260490-61c3-476a-951b-d14386d84f9e.webp",
+          "alt": "precipitation",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "9884ebf4e92d5febe61be5b382d83f4f49526de5ac4dd2d31513102f04a86f30"
+    },
+    {
+      "word": "crimp",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/krɪmp/",
+        "us": "/krɪmp/"
+      },
+      "meaning": "使受限制；削弱",
+      "collocation": {
+        "en": "crimp growth",
+        "zh": "限制增长"
+      },
+      "example": {
+        "en": "High interest rates may crimp economic growth.",
+        "zh": "高利率可能会抑制经济增长。"
+      },
+      "id": "v000240",
+      "images": [
+        {
+          "id": "42ce55e8-f82b-4a02-bdbb-fdf74a4de0cd",
+          "src": "images/list05/v000240-42ce55e8-f82b-4a02-bdbb-fdf74a4de0cd.webp",
+          "alt": "crimp",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "49c660a285b7f0930ef979cfbf8f91f9b212552fba4cb6a1f7aee5467890fa3e"
+    },
+    {
+      "word": "crimp",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/krɪmp/",
+        "us": "/krɪmp/"
+      },
+      "meaning": "压接；使起皱",
+      "collocation": {
+        "en": "crimp a cable",
+        "zh": "压接电缆"
+      },
+      "example": {
+        "en": "The technician is crimping a connector onto the cable.",
+        "zh": "技术人员正在给网线压接接头。"
+      },
+      "id": "v000241",
+      "images": [
+        {
+          "id": "f23701d3-3886-4cf5-9931-68ba45f5fb60",
+          "src": "images/list05/v000241-f23701d3-3886-4cf5-9931-68ba45f5fb60.webp",
+          "alt": "crimp",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "fac4ffac286170a73a0912287e36c702cbc9e2804077ca41ad277b425ba16f2e"
+    },
+    {
+      "word": "correspondence",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˌkɒrəˈspɒndəns/",
+        "us": "/ˌkɔːrəˈspɑːndəns/"
+      },
+      "meaning": "通信；信件",
+      "collocation": {
+        "en": "business correspondence",
+        "zh": "商务通信"
+      },
+      "example": {
+        "en": "Please keep all business correspondence with the client.",
+        "zh": "请保存所有与客户的商务往来邮件。"
+      },
+      "id": "v000242",
+      "images": [
+        {
+          "id": "d1cf654c-2d75-4290-a145-f6aef1dc1a8a",
+          "src": "images/list05/v000242-d1cf654c-2d75-4290-a145-f6aef1dc1a8a.webp",
+          "alt": "correspondence",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "ac209a8a760ab6b1d7ba959c2d5acb06badf8b0d4e9fccdf99b126c661bff206"
+    },
+    {
+      "word": "vivacious",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/vɪˈveɪʃəs/",
+        "us": "/vɪˈveɪʃəs/"
+      },
+      "meaning": "活泼的；有活力的",
+      "collocation": {
+        "en": "vivacious personality",
+        "zh": "活泼开朗的性格"
+      },
+      "example": {
+        "en": "Her vivacious personality is popular with her colleagues.",
+        "zh": "她活泼开朗的性格很受同事欢迎。"
+      },
+      "id": "v000243",
+      "images": [
+        {
+          "id": "bf19886c-c27e-4c4f-b66c-74695a2a63f5",
+          "src": "images/list05/v000243-bf19886c-c27e-4c4f-b66c-74695a2a63f5.webp",
+          "alt": "vivacious",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "18dab913a989d65ddc095b9c4d8211d4ad43dd0b7b79a15d9cfacb28fb199611"
+    },
+    {
+      "word": "wade",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/weɪd/",
+        "us": "/weɪd/"
+      },
+      "meaning": "蹚水；艰难行进",
+      "collocation": {
+        "en": "wade through",
+        "zh": "蹚过；费力处理大量……"
+      },
+      "example": {
+        "en": "We had to wade through knee-deep water.",
+        "zh": "我们不得不蹚过齐膝深的水。"
+      },
+      "id": "v000244",
+      "images": [
+        {
+          "id": "3713672f-91ba-467d-abae-9d14d3056f9f",
+          "src": "images/list05/v000244-3713672f-91ba-467d-abae-9d14d3056f9f.webp",
+          "alt": "wade",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "c4595a06bb1553b6ec5da32b1ae1cc3c6781a62ba628bb2ec1223643131908af"
+    },
+    {
+      "word": "fastidious",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/fæˈstɪdiəs/",
+        "us": "/fæˈstɪdiəs/"
+      },
+      "meaning": "一丝不苟的；挑剔的",
+      "collocation": {
+        "en": "fastidious about",
+        "zh": "对……十分讲究"
+      },
+      "example": {
+        "en": "He is fastidious about code quality.",
+        "zh": "他对代码质量要求非常严格。"
+      },
+      "id": "v000245",
+      "images": [
+        {
+          "id": "cfdf0fc4-9497-43e8-b881-a7954bb8b337",
+          "src": "images/list05/v000245-cfdf0fc4-9497-43e8-b881-a7954bb8b337.webp",
+          "alt": "fastidious",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "dcf7deebecff73574c503b7d464ad66e24d5fcd8ed8ae85cc6d0ff98b52fc36d"
+    },
+    {
+      "word": "weary",
+      "partOfSpeech": "adj.",
+      "ipa": {
+        "uk": "/ˈwɪəri/",
+        "us": "/ˈwɪri/"
+      },
+      "meaning": "疲倦的；厌烦的",
+      "collocation": {
+        "en": "weary of",
+        "zh": "对……感到厌倦"
+      },
+      "example": {
+        "en": "Everyone is weary of endless meetings.",
+        "zh": "大家已经厌倦了无休止的会议。"
+      },
+      "id": "v000246",
+      "images": [
+        {
+          "id": "78f76793-f049-4464-afde-edd5c5921f12",
+          "src": "images/list05/v000246-78f76793-f049-4464-afde-edd5c5921f12.webp",
+          "alt": "weary",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "3246ad0b0a1a1fb3be8060897b538d33dbf048205ddd732694550cfe5ad81b5f"
+    },
+    {
+      "word": "gourd",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ɡʊəd/",
+        "us": "/ɡʊrd/"
+      },
+      "meaning": "葫芦；葫芦科植物",
+      "collocation": {
+        "en": "bottle gourd",
+        "zh": "葫芦"
+      },
+      "example": {
+        "en": "This type of gourd is often used in soup.",
+        "zh": "这种葫芦常被用来做汤。"
+      },
+      "id": "v000247",
+      "images": [
+        {
+          "id": "08c992c7-ad12-4c94-81df-e311ef3cddfd",
+          "src": "images/list05/v000247-08c992c7-ad12-4c94-81df-e311ef3cddfd.webp",
+          "alt": "gourd",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "cf14815586e06cd52783a9669952b0b9252b9b68aec1353f47ecb0dfefb183c2"
+    },
+    {
+      "word": "overwhelm",
+      "partOfSpeech": "v.",
+      "ipa": {
+        "uk": "/ˌəʊvəˈwelm/",
+        "us": "/ˌoʊvərˈwelm/"
+      },
+      "meaning": "压倒；使不知所措",
+      "collocation": {
+        "en": "be overwhelmed by",
+        "zh": "被……压得应接不暇"
+      },
+      "example": {
+        "en": "He was overwhelmed by the amount of work.",
+        "zh": "大量工作让他有些不知所措。"
+      },
+      "id": "v000248",
+      "images": [
+        {
+          "id": "35b4ad3d-58fd-4b4e-925e-9b7b8b89280c",
+          "src": "images/list05/v000248-35b4ad3d-58fd-4b4e-925e-9b7b8b89280c.webp",
+          "alt": "overwhelm",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "30f2b01478bfa11c62aa4056cf9e7ea21c711f923804e7d970894d4748e9de9a"
+    },
+    {
+      "word": "latitude",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈlætɪtjuːd/",
+        "us": "/ˈlætɪtuːd/"
+      },
+      "meaning": "纬度",
+      "collocation": {
+        "en": "at a latitude of",
+        "zh": "位于……纬度"
+      },
+      "example": {
+        "en": "Tokyo is located at a latitude of about 35 degrees north.",
+        "zh": "东京大约位于北纬35度。"
+      },
+      "id": "v000249",
+      "images": [
+        {
+          "id": "99284280-3807-4628-89e5-2e9134a3d50c",
+          "src": "images/list05/v000249-99284280-3807-4628-89e5-2e9134a3d50c.webp",
+          "alt": "latitude",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "f77b17954b60728de22317d0e4c20e5ecc536d6a8072ccfe97e7e328e8c16750"
+    },
+    {
+      "word": "latitude",
+      "partOfSpeech": "n.",
+      "ipa": {
+        "uk": "/ˈlætɪtjuːd/",
+        "us": "/ˈlætɪtuːd/"
+      },
+      "meaning": "自由度；回旋余地",
+      "collocation": {
+        "en": "give someone latitude",
+        "zh": "给某人自主权"
+      },
+      "example": {
+        "en": "The manager gave the team considerable latitude in making decisions.",
+        "zh": "经理给团队很大的自主决策空间。"
+      },
+      "id": "v000250",
+      "images": [
+        {
+          "id": "c650f934-5d64-4015-b09f-6bf360ddbd1e",
+          "src": "images/list05/v000250-c650f934-5d64-4015-b09f-6bf360ddbd1e.webp",
+          "alt": "latitude",
+          "widthPercent": 100,
+          "height": 300,
+          "objectFit": "contain",
+          "objectPosition": "center",
+          "rotation": 0,
+          "zoom": 1
+        }
+      ],
+      "tags": [],
+      "notes": "",
+      "sourceKey": "6b5ed474b1fe322ef11424cec390884d99860298cea81da196aef940270e85f2"
+    }
+  ]
+}

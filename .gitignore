@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.upstream-web/
+android/.gradle/
+android/local.properties
+android/**/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+release/*.apk
+release/SHA256.txt
+test-results/
+playwright-report/
+device-test-logs/
+*.jks
+*.keystore
