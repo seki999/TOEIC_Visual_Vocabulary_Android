@@ -7,12 +7,13 @@
 - 资源校验：13 List、626 词条、626 张关联图片，结构及引用完整；数字仅是本次校验结果，业务代码不依赖这些数量。
 - TypeScript、ESLint、前端生产构建通过。
 - Vitest：6 项，覆盖原字段/语言/路径规则、稳定 ID 恢复/删除夹取、新增 manifest List、允许缺图、拒绝损坏引用、初次安装与旧设置合并。
-- Playwright：手机 393×851/851×393、平板 800×1280/1280×800，共 16 项通过。覆盖模式、Tab 不改词、选中位置、数字清空重输、持久化、无上传入口、主区域与控制栏不重叠、缺图、全屏按钮隐藏/恢复、回到首词，以及多个 List 的选择保存和循环模式互斥。此为 Chromium 视口测试，不是 Android 真机验收。
+- Playwright：手机 393×851/851×393、平板 800×1280/1280×800，共 20 项通过。覆盖六字段默认顺序、取消后重新勾选的位置、手动排序和恢复默认，以及模式、Tab 不改词、选中位置、数字清空重输、持久化、无上传入口、主区域与控制栏不重叠、缺图、全屏按钮隐藏/恢复、回到首词、多个 List 的选择保存和循环模式互斥。此为 Chromium 视口测试，不是 Android 真机验收。
 - 原生逻辑测试共 13 项通过：跳词、过期代次、暂停/恢复、字段/单词重复、单词/List 循环、停止、离线声音选择，以及 manifest 顺序、删除/重复 List ID、跨 List 首尾回环、重复完成后换 List、跨 List 后旧回调失效、暂停/停止边界。
 - Android Lint 无错误，有依赖版本更新、模板资源等警告。系统 MediaSession 兼容 API 存在弃用编译警告。
 - `assembleDebugAndroidTest` 已通过，包含服务生命周期测试的仪器 APK 编译成功，未在设备执行。
 - APK 逐文件 SHA-256 验证通过：640 个引用（manifest、13 个 List 和 626 张图片）与项目资源完全一致。
-- 一键脚本构建应用及仪器测试 APK 通过。新版已通过 `apksigner verify`（与旧本地 APK 相同的 Android Debug 证书、v2 签名）和 `aapt dump badging` 检查，minSdk=26、targetSdk=35。多个 List 循环版提高到 versionName=1.1.0、versionCode=2，applicationId 保持一致。
+- 一键脚本构建应用及仪器测试 APK。多个 List 循环版 1.1.0 已通过 `apksigner verify`（与旧本地 APK 相同的 Android Debug 证书、v2 签名）和 `aapt dump badging` 检查，minSdk=26、targetSdk=35。本次六字段默认顺序版提高到 versionName=1.1.1、versionCode=3，applicationId 保持一致。
+- Vitest 设置迁移回归同时检查：原两字段默认顺序升级为六字段，保留语速和自定义顺序，不清空学习位置及多 List 设置。
 - 最新 Debug APK 校验和在 `release/SHA256.txt`，每次一键构建后自动更新。
 
 ## 尚未完成的验证

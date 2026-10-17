@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { type Field } from "./types";
+import { fields, type Field } from "./types";
 export interface Settings {
   mode: "both" | "text" | "image";
   font: number;
@@ -52,7 +52,7 @@ export const defaults: Settings = {
   overlaySize: 24,
   overlayBackground: 0.65,
   reveal: false,
-  order: ["word", "example.en"],
+  order: [...fields],
   enRate: 0.8,
   zhRate: 1.2,
   pitch: 1,
@@ -100,13 +100,23 @@ export const useStore = create<{
     }),
     {
       name: "toeic-android-settings-v1",
-      version: 1,
+      version: 2,
       // Preserve explicit preferences across APK upgrades, including rates and wake=false.
-      migrate: (persisted) => {
+      migrate: (persisted, version) => {
         const state = persisted as { settings?: Partial<Settings> };
+        const oldOrder = state.settings?.order;
+        const wasOldDefault =
+          version < 2 &&
+          oldOrder?.length === 2 &&
+          oldOrder[0] === "word" &&
+          oldOrder[1] === "example.en";
         return {
           ...state,
-          settings: { ...defaults, ...state.settings },
+          settings: {
+            ...defaults,
+            ...state.settings,
+            ...(wasOldDefault ? { order: [...fields] } : {}),
+          },
         };
       },
       merge: (persisted, current) => {

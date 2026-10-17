@@ -169,7 +169,7 @@ class PlaybackService : Service() {
         if (cursor.status != "playing") { settings = pendingSettings!!; pendingSettings = null }
     }
     private fun order(): List<String> {
-        val a = settings.optJSONArray("order") ?: JSONArray().put("word").put("example.en")
+        val a = settings.optJSONArray("order") ?: JSONArray().put("word").put("meaning").put("collocation.en").put("collocation.zh").put("example.en").put("example.zh")
         return (0 until a.length()).map { a.optString(it) }.filter { it in allowed }.distinct()
     }
     private fun intSetting(key: String, default: Int, max: Int) = settings.optInt(key, default).coerceIn(if (key.endsWith("Repeat") || key == "repeat") 1 else 0, max)

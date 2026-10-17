@@ -99,6 +99,19 @@ export default function SettingsPanel({
     </label>
   );
   function toggle(key: "visible" | "overlay" | "order", f: Field) {
+    if (key === "order" && !c.order.includes(f)) {
+      // Restore a field to its default position unless the user explicitly reordered the queue.
+      const canonical = c.order.every(
+        (field, i) =>
+          i === 0 || fields.indexOf(c.order[i - 1]) < fields.indexOf(field),
+      );
+      set({
+        order: canonical
+          ? fields.filter((field) => field === f || c.order.includes(field))
+          : [...c.order, f],
+      });
+      return;
+    }
     set({
       [key]: c[key].includes(f)
         ? c[key].filter((x) => x !== f)
@@ -255,6 +268,9 @@ export default function SettingsPanel({
           </label>
         ))}
         <h3>字段与顺序</h3>
+        <button onClick={() => set({ order: [...fields] })}>
+          恢复默认顺序
+        </button>
         {fields.map((f) => (
           <label key={f}>
             <input

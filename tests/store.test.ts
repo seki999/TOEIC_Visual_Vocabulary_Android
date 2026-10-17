@@ -12,6 +12,26 @@ it("merges first launch and older settings without resetting explicit preference
   const merge = useStore.persist.getOptions().merge!;
   const current = useStore.getState();
   expect(merge(undefined, current).settings).toEqual(defaults);
+  expect(defaults.order).toEqual([
+    "word",
+    "meaning",
+    "collocation.en",
+    "collocation.zh",
+    "example.en",
+    "example.zh",
+  ]);
+  const migrate = useStore.persist.getOptions().migrate!;
+  const upgraded = (await migrate(
+    { settings: { order: ["word", "example.en"], enRate: 0.6 } },
+    1,
+  )) as typeof current;
+  expect(upgraded.settings.order).toEqual(defaults.order);
+  expect(upgraded.settings.enRate).toBe(0.6);
+  const customized = (await migrate(
+    { settings: { order: ["meaning", "word"] } },
+    1,
+  )) as typeof current;
+  expect(customized.settings.order).toEqual(["meaning", "word"]);
   const saved = {
     settings: { enRate: 0.6, zhRate: 1.5, wake: false },
     positions: { list99: 7 },

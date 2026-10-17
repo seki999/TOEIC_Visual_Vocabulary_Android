@@ -1,4 +1,29 @@
 import { test, expect } from "@playwright/test";
+test("default speech order, field reinsertion and reset", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "设置", exact: true }).click();
+  const order = page
+    .locator(".field")
+    .filter({ has: page.getByRole("button", { name: /^上移/ }) })
+    .locator("span");
+  const expected = [
+    "1. 英语单词",
+    "2. 中文释义",
+    "3. 英语搭配",
+    "4. 搭配中文",
+    "5. 英语例句",
+    "6. 中文例句",
+  ];
+  await expect(order).toHaveText(expected);
+  const meaning = page.getByRole("checkbox", { name: "中文释义", exact: true });
+  await meaning.uncheck();
+  await meaning.check();
+  await expect(order).toHaveText(expected);
+  await page.getByRole("button", { name: "下移英语单词", exact: true }).click();
+  await expect(order.first()).toHaveText("1. 中文释义");
+  await page.getByRole("button", { name: "恢复默认顺序", exact: true }).click();
+  await expect(order).toHaveText(expected);
+});
 test("multi-List loop selection persists and loop modes are exclusive", async ({
   page,
 }) => {
