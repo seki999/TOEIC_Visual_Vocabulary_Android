@@ -16,6 +16,7 @@
 | 不带入 | drafts、localEditor、IndexedDB 图片草稿、JSZip、Excel 导入、编辑 Vite 插件 | 不安装对应运行依赖，不存在 App 数据编辑入口 |
 | 新增 | native.ts / VocabularyTTSPlugin | 命令、版本化快照、前台重新同步、离线声音查询、通知权限 |
 | 新增 | PlaybackService / QueueCursor / OfflineVoicePolicy | 前台通知、原生队列、MediaSession、音频焦点、超时与回调失效、语言包检测 |
+| 新增 | PlaylistOrder / 多 List 循环设置 | manifest 顺序解析所选 List，原生服务跨 List 连播、组末回环、删除 ID 兼容、设置持久化及循环模式互斥 |
 | 新增 | MainActivity | Android 系统 Insets、返回键/手势、旋转配置、FLAG_KEEP_SCREEN_ON |
 | 新增 | 资源校验、PowerShell、Actions、测试 | 构建 APK、检测升级位置及未来 manifest List、四种视口 |
 

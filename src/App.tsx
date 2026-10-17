@@ -357,7 +357,11 @@ export default function App() {
         <button
           aria-label="上一词"
           disabled={!word}
-          onClick={() => select(Math.max(0, index - 1))}
+          onClick={() =>
+            state.status === "stopped"
+              ? select(Math.max(0, index - 1))
+              : void command("previous")
+          }
         >
           |◀
         </button>
@@ -383,7 +387,9 @@ export default function App() {
           aria-label="下一词"
           disabled={!word}
           onClick={() =>
-            select(Math.min((list?.items.length || 1) - 1, index + 1))
+            state.status === "stopped"
+              ? select(Math.min((list?.items.length || 1) - 1, index + 1))
+              : void command("next")
           }
         >
           ▶|
@@ -431,7 +437,9 @@ export default function App() {
           </aside>
         </div>
       )}
-      {settings && <SettingsPanel close={() => setSettings(false)} />}
+      {settings && (
+        <SettingsPanel close={() => setSettings(false)} lists={lists} />
+      )}
     </div>
   );
 }

@@ -37,6 +37,10 @@ class PlaybackService : Service() {
     private var delayMs = 0L
     private var utteranceId = ""
     private var serial = 0L
+    private val manifestEntries: List<JSONObject> by lazy {
+        val manifest = JSONObject(assets.open("public/data/manifest.json").bufferedReader().use { it.readText() }).getJSONArray("lists")
+        (0 until manifest.length()).map { manifest.getJSONObject(it) }
+    }
     private val allowed = setOf("word", "meaning", "collocation.en", "collocation.zh", "example.en", "example.zh")
     private val prefs get() = getSharedPreferences("playback", MODE_PRIVATE)
     private val noisy = object : BroadcastReceiver() {
@@ -95,9 +99,15 @@ class PlaybackService : Service() {
             when (intent?.action) {
                 "play" -> {
                     invalidateSpeech(); settings = pendingSettings ?: settings; pendingSettings = null
-                    loadList(intent.getStringExtra("listId") ?: "")
-                    cursor.play(intent.getIntExtra("index", 0).coerceIn(0, items.length() - 1)); error = ""
-                    require(hasContent()) { "所选字段没有可朗读内容" }
+                    val requested = intent.getStringExtra("listId") ?: ""
+                    val playlist = selectedLists()
+                    val startList = if (playlist.isNotEmpty() && requested !in playlist) playlist.first() else requested
+                    loadList(startList)
+                    cursor.play((if (startList == requested) intent.getIntExtra("index", 0) else 0).coerceIn(0, items.length() - 1)); error = ""
+                    if (!hasContent()) {
+                        require(playlist.isNotEmpty()) { "所选字段没有可朗读内容" }
+                        movePlaylist(playlist)
+                    }
                     if (!requestFocus()) return START_NOT_STICKY
                     holdWake(); publish(); if (ready) speak()
                     else handler.postDelayed({ if (!ready && !destroyed) fail("TTS 引擎初始化超时") }, 15000)
@@ -125,13 +135,32 @@ class PlaybackService : Service() {
         return START_NOT_STICKY
     }
     private fun loadList(id: String) {
-        val manifest = JSONObject(assets.open("public/data/manifest.json").bufferedReader().use { it.readText() }).getJSONArray("lists")
-        val entry = (0 until manifest.length()).map { manifest.getJSONObject(it) }.firstOrNull { it.getString("id") == id }
+        val entry = manifestEntries.firstOrNull { it.getString("id") == id }
             ?: throw IllegalArgumentException("找不到 List：$id")
         val path = entry.getString("file")
         require(path.startsWith("data/") && !path.contains(".."))
         val data = JSONObject(assets.open("public/$path").bufferedReader().use { it.readText() })
         items = data.getJSONArray("items"); require(items.length() > 0) { "List 没有词汇" }; listId = id
+    }
+    private fun selectedLists(value: JSONObject = settings): List<String> {
+        if (!value.optBoolean("multiListLoop") || value.optBoolean("currentOnly")) return emptyList()
+        val raw = value.optJSONArray("loopListIds") ?: JSONArray()
+        val selected = PlaylistOrder.resolve(manifestEntries.map { it.getString("id") }, (0 until raw.length()).map { raw.optString(it) })
+        require(selected.isNotEmpty()) { "请至少选择一个有效的 List 进行循环播放" }
+        return selected
+    }
+    /** Bounded scan avoids endlessly looping over Lists whose selected fields are all empty. */
+    private fun movePlaylist(ids: List<String>, direction: Int = 1) {
+        var candidate = listId
+        repeat(ids.size) {
+            candidate = PlaylistOrder.next(ids, candidate, direction)
+            loadList(candidate)
+            if (hasContent()) {
+                cursor.seek(if (direction < 0) items.length() - 1 else 0)
+                return
+            }
+        }
+        throw IllegalArgumentException("选中的 List 没有可朗读内容，请调整朗读字段")
     }
     fun configure(value: JSONObject?) {
         if (value == null) return
@@ -160,6 +189,7 @@ class PlaybackService : Service() {
             settings = it; pendingSettings = null
             if (!hasContent()) { fail("所选字段没有可朗读内容"); return }
         }
+        selectedLists() // Validate selection before speech, including settings changed while paused.
         val fields = order()
         if (fields.isEmpty()) { fail("请至少选择一个朗读字段"); return }
         if (cursor.field >= fields.size) { cursor.field = 0; cursor.fieldCycle = 0 }
@@ -193,10 +223,15 @@ class PlaybackService : Service() {
         utteranceId = ""; handler.removeCallbacksAndMessages(null); advance()
     }
     private fun advance() {
-        val boundary = cursor.advance(items.length(), order().size, intSetting("fieldRepeat", 1, 20), intSetting("repeat", 1, 20), settings.optBoolean("currentOnly"), settings.optBoolean("loop"))
-        if (cursor.status == "stopped") { finishPlayback(); return }
-        publish()
-        schedule(intSetting(if (boundary) "itemGap" else "gap", if (boundary) 500 else 300, 60000).toLong()) { speak() }
+        try {
+            val loopSettings = pendingSettings ?: settings
+            val playlist = selectedLists(loopSettings)
+            val boundary = cursor.advance(items.length(), order().size, intSetting("fieldRepeat", 1, 20), intSetting("repeat", 1, 20), loopSettings.optBoolean("currentOnly"), loopSettings.optBoolean("loop"), playlist.isNotEmpty())
+            if (cursor.status == "stopped") { finishPlayback(); return }
+            if (cursor.listEnded && playlist.isNotEmpty()) movePlaylist(playlist)
+            publish()
+            schedule(intSetting(if (boundary) "itemGap" else "gap", if (boundary) 500 else 300, 60000).toLong()) { speak() }
+        } catch (e: Exception) { fail("无法继续朗读：${e.message}") }
     }
     private fun schedule(ms: Long, block: () -> Unit) {
         val token = cursor.generation; delayPending = true; delayMs = ms
@@ -205,8 +240,14 @@ class PlaybackService : Service() {
     private fun invalidateSpeech() { cursor.invalidate(); utteranceId = ""; handler.removeCallbacksAndMessages(null); if (ready) tts.stop() }
     private fun seek(n: Int) {
         if (items.length() == 0) return
-        invalidateSpeech(); delayPending = false; cursor.seek(n.coerceIn(0, items.length()-1)); error = ""; publish()
-        if (cursor.status == "playing") speak()
+        try {
+            invalidateSpeech(); delayPending = false
+            val playlist = selectedLists(pendingSettings ?: settings)
+            if ((n < 0 || n >= items.length()) && playlist.isNotEmpty()) movePlaylist(playlist, if (n < 0) -1 else 1)
+            else cursor.seek(n.coerceIn(0, items.length()-1))
+            error = ""; publish()
+            if (cursor.status == "playing") speak()
+        } catch (e: Exception) { fail("无法切换词汇：${e.message}") }
     }
     private fun pause(abandon: Boolean) {
         if (cursor.status != "playing") {

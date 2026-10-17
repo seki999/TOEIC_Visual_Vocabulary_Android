@@ -22,6 +22,14 @@ it("merges first launch and older settings without resetting explicit preference
   expect(restored.settings.zhRate).toBe(1.5);
   expect(restored.settings.wake).toBe(false);
   expect(restored.settings.page).toBe("text");
+  expect(restored.settings.multiListLoop).toBe(false);
+  expect(restored.settings.loopListIds).toEqual([]);
+  const playlist = merge(
+    { settings: { multiListLoop: true, loopListIds: ["list14", "list99"] } },
+    current,
+  );
+  expect(playlist.settings.loopListIds).toEqual(["list14", "list99"]);
+  expect(playlist.settings.multiListLoop).toBe(true);
   expect(restored.positions.list99).toBe(7);
   expect(restored.wordIds.list99).toBe("stable");
   vi.unstubAllGlobals();

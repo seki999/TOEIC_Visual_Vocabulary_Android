@@ -1,4 +1,42 @@
 import { test, expect } from "@playwright/test";
+test("multi-List loop selection persists and loop modes are exclusive", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("h1")).toBeVisible();
+  await page.getByRole("button", { name: "设置", exact: true }).click();
+  await page.getByLabel("多个 List 循环", { exact: true }).check();
+  await expect(page.getByRole("alert")).toContainText("至少选择一个 List");
+  await page.getByLabel("List 03（50 词）", { exact: true }).check();
+  await page.getByLabel("List 01（50 词）", { exact: true }).check();
+  await expect(page.locator(".playlist-settings")).toContainText(
+    "已选 2 个 List",
+  );
+  await page.getByRole("button", { name: "完成", exact: true }).click();
+  await page.reload();
+  await page.getByRole("button", { name: "设置", exact: true }).click();
+  await expect(
+    page.getByLabel("多个 List 循环", { exact: true }),
+  ).toBeChecked();
+  await expect(
+    page.getByLabel("List 01（50 词）", { exact: true }),
+  ).toBeChecked();
+  await expect(
+    page.getByLabel("List 03（50 词）", { exact: true }),
+  ).toBeChecked();
+  await page.getByLabel("当前单词循环", { exact: true }).check();
+  await expect(
+    page.getByLabel("多个 List 循环", { exact: true }),
+  ).not.toBeChecked();
+  await page.getByLabel("当前 List 循环", { exact: true }).check();
+  await expect(
+    page.getByLabel("当前单词循环", { exact: true }),
+  ).not.toBeChecked();
+  await page.getByLabel("多个 List 循环", { exact: true }).check();
+  await expect(
+    page.getByLabel("当前 List 循环", { exact: true }),
+  ).not.toBeChecked();
+});
 test("fullscreen controls can hide and return without a zoom control", async ({
   page,
 }) => {

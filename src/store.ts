@@ -25,6 +25,8 @@ export interface Settings {
   gap: number;
   itemGap: number;
   loop: boolean;
+  multiListLoop: boolean;
+  loopListIds: string[];
   currentOnly: boolean;
   autoScroll: boolean;
   scrollPosition: ScrollLogicalPosition;
@@ -63,6 +65,8 @@ export const defaults: Settings = {
   gap: 300,
   itemGap: 500,
   loop: false,
+  multiListLoop: false,
+  loopListIds: [],
   currentOnly: false,
   autoScroll: true,
   scrollPosition: "center",

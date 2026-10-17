@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fields, labels, type Field } from "./types";
+import { fields, labels, type Field, type List } from "./types";
 import { useStore, type Settings } from "./store";
 import { isAndroid, native, type Voice } from "./native";
 // Reused Web numeric draft/commit behavior: clearing a number never writes a default mid-edit.
@@ -43,7 +43,13 @@ export function NumericInput({
     />
   );
 }
-export default function SettingsPanel({ close }: { close: () => void }) {
+export default function SettingsPanel({
+  close,
+  lists,
+}: {
+  close: () => void;
+  lists: List[];
+}) {
   const { settings: c, set } = useStore();
   const [voices, setVoices] = useState<Voice[]>([]);
   useEffect(() => {
@@ -76,7 +82,18 @@ export default function SettingsPanel({ close }: { close: () => void }) {
       <input
         type="checkbox"
         checked={Boolean(c[key])}
-        onChange={(e) => set({ [key]: e.target.checked })}
+        onChange={(e) => {
+          const checked = e.target.checked;
+          if (checked && key === "multiListLoop")
+            set({ multiListLoop: true, currentOnly: false, loop: false });
+          else if (checked && (key === "loop" || key === "currentOnly"))
+            set({
+              [key]: true,
+              multiListLoop: false,
+              [key === "loop" ? "currentOnly" : "loop"]: false,
+            });
+          else set({ [key]: checked });
+        }}
       />
       {title}
     </label>
@@ -100,6 +117,48 @@ export default function SettingsPanel({ close }: { close: () => void }) {
           <h2>学习设置</h2>
           <button onClick={close}>完成</button>
         </header>
+        <h3>循环范围</h3>
+        {check("currentOnly", "当前单词循环")}
+        {check("loop", "当前 List 循环")}
+        {check("multiListLoop", "多个 List 循环")}
+        {c.multiListLoop && (
+          <fieldset className="playlist-settings">
+            <legend>选择循环播放的 List</legend>
+            <div className="playlist-actions">
+              <button
+                onClick={() => set({ loopListIds: lists.map((l) => l.id) })}
+              >
+                全选 List
+              </button>
+              <button onClick={() => set({ loopListIds: [] })}>清空选择</button>
+            </div>
+            {lists.map((l) => (
+              <label key={l.id}>
+                <input
+                  type="checkbox"
+                  checked={c.loopListIds.includes(l.id)}
+                  onChange={(e) =>
+                    set({
+                      loopListIds: e.target.checked
+                        ? [...c.loopListIds, l.id]
+                        : c.loopListIds.filter((id) => id !== l.id),
+                    })
+                  }
+                />
+                {l.title}（{l.items.length} 词）
+              </label>
+            ))}
+            <p className="hint">
+              已选 {lists.filter((l) => c.loopListIds.includes(l.id)).length} 个
+              List，按词库顺序连续播放，最后一个播完后回到第一个。当前 List
+              未选中时，从第一个选中的 List 开始。播放中更改选择，从下一次切换
+              List 生效。
+            </p>
+            {!lists.some((l) => c.loopListIds.includes(l.id)) && (
+              <p role="alert">请至少选择一个 List。</p>
+            )}
+          </fieldset>
+        )}
         <h3>显示</h3>
         {number("font", "文字大小", 14, 48)}
         {number("overlaySize", "覆盖文字大小", 14, 64)}
@@ -239,8 +298,6 @@ export default function SettingsPanel({ close }: { close: () => void }) {
         {number("repeat", "单词重复次数", 1, 20)}
         {number("gap", "字段间隔（毫秒）", 0, 60000, 100)}
         {number("itemGap", "单词间隔（毫秒）", 0, 60000, 100)}
-        {check("currentOnly", "当前单词循环")}
-        {check("loop", "当前 List 循环")}
         <p className="hint">
           缺少离线 TTS 语言包时会停止并提示。请先在 Android
           系统文字转语音设置中安装英语和中文离线声音。极端省电或强制停止可能中断播放。
