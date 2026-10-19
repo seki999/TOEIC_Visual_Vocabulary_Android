@@ -7,6 +7,7 @@ export interface Settings {
   ratio: number;
   visible: Field[];
   overlay: Field[];
+  overlayIpa: boolean;
   overlayPosition: "top" | "center" | "bottom";
   overlayColor: string;
   overlaySize: number;
@@ -47,6 +48,7 @@ export const defaults: Settings = {
     "example.zh",
   ],
   overlay: ["word"],
+  overlayIpa: false,
   overlayPosition: "bottom",
   overlayColor: "#ffffff",
   overlaySize: 24,

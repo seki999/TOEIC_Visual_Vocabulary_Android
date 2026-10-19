@@ -92,6 +92,11 @@ function PictureView({ word }: { word: Word }) {
           {c.overlay.map((f) => (
             <p key={f}>{fieldText(word, f)}</p>
           ))}
+          {c.overlayIpa && (
+            <p className="overlay-ipa">
+              英式 {word.ipa.uk} · 美式 {word.ipa.us}
+            </p>
+          )}
         </div>
       )}
       {c.reveal && !revealed && (

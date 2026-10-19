@@ -206,6 +206,7 @@ export default function SettingsPanel({
           可按电源键主动锁屏，原生服务继续朗读。暂停或停止后恢复系统休眠。
         </p>
         <h3>可见字段 / 图片覆盖</h3>
+        {check("overlayIpa", "覆盖国际音标（英式 / 美式，仅显示）")}
         {fields.map((f) => (
           <div className="field" key={f}>
             <span>{labels[f]}</span>
