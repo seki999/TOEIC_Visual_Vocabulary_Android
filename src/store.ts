@@ -52,7 +52,7 @@ export const defaults: Settings = {
   overlayPosition: "bottom",
   overlayColor: "#ffffff",
   overlaySize: 24,
-  overlayBackground: 0.65,
+  overlayBackground: 0,
   reveal: false,
   order: [...fields],
   enRate: 0.8,
@@ -102,7 +102,7 @@ export const useStore = create<{
     }),
     {
       name: "toeic-android-settings-v1",
-      version: 2,
+      version: 3,
       // Preserve explicit preferences across APK upgrades, including rates and wake=false.
       migrate: (persisted, version) => {
         const state = persisted as { settings?: Partial<Settings> };
@@ -118,6 +118,9 @@ export const useStore = create<{
             ...defaults,
             ...state.settings,
             ...(wasOldDefault ? { order: [...fields] } : {}),
+            ...(version < 3 && state.settings?.overlayBackground === 0.65
+              ? { overlayBackground: 0 }
+              : {}),
           },
         };
       },

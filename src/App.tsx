@@ -1,9 +1,44 @@
-import { useEffect, useRef, useState } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import { loadLibrary, safePosition } from "./data";
 import { asset, fieldText, labels, type List, type Word } from "./types";
 import { useStore } from "./store";
 import { isAndroid, native, stopped, type PlaybackState } from "./native";
 import SettingsPanel from "./Settings";
+
+function OverlayRow({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  const row = useRef<HTMLParagraphElement>(null);
+  const text = useRef<HTMLSpanElement>(null);
+  useLayoutEffect(() => {
+    const fit = () => {
+      if (!row.current || !text.current) return;
+      text.current.style.fontSize = "1em";
+      const width = text.current.getBoundingClientRect().width;
+      if (width > 0)
+        text.current.style.fontSize = `${Math.min(1, row.current.clientWidth / width)}em`;
+    };
+    fit();
+    const observer = new ResizeObserver(fit);
+    if (row.current) observer.observe(row.current);
+    return () => observer.disconnect();
+  }, [children]);
+  return (
+    <p ref={row} className={`overlay-row ${className}`}>
+      <span ref={text}>{children}</span>
+    </p>
+  );
+}
 
 function PictureView({ word }: { word: Word }) {
   const c = useStore((s) => s.settings);
@@ -89,10 +124,40 @@ function PictureView({ word }: { word: Word }) {
             background: `rgba(0,0,0,${c.overlayBackground})`,
           }}
         >
-          {c.overlay.map((f) => (
-            <p key={f}>{fieldText(word, f)}</p>
-          ))}
-          {c.overlayIpa && (
+          {c.overlay.map((f, index) => {
+            if (f.startsWith("collocation.")) {
+              if (
+                c.overlay
+                  .slice(0, index)
+                  .some((field) => field.startsWith("collocation."))
+              )
+                return null;
+              return (
+                <OverlayRow key="collocation" className="overlay-collocation">
+                  {c.overlay.includes("collocation.en") &&
+                    fieldText(word, "collocation.en")}
+                  {c.overlay.includes("collocation.en") &&
+                    c.overlay.includes("collocation.zh") &&
+                    " · "}
+                  {c.overlay.includes("collocation.zh") &&
+                    fieldText(word, "collocation.zh")}
+                </OverlayRow>
+              );
+            }
+            const Row = f === "word" ? OverlayRow : "p";
+            return (
+              <Row key={f}>
+                {fieldText(word, f)}
+                {f === "word" && c.overlayIpa && (
+                  <span className="overlay-ipa">
+                    {" "}
+                    · 英式 {word.ipa.uk} · 美式 {word.ipa.us}
+                  </span>
+                )}
+              </Row>
+            );
+          })}
+          {c.overlayIpa && !c.overlay.includes("word") && (
             <p className="overlay-ipa">
               英式 {word.ipa.uk} · 美式 {word.ipa.us}
             </p>

@@ -196,6 +196,13 @@ main {
 .overlay p {
   margin: 2px 0;
 }
+.overlay-ipa {
+  font-size: 0.75em;
+}
+.overlay-row > span {
+  display: inline-block;
+  white-space: nowrap;
+}
 .overlay.top {
   top: 68px;
 }
