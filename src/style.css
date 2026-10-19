@@ -182,6 +182,7 @@ main {
   padding: 32px;
 }
 .overlay {
+  text-align: center;
   position: absolute;
   left: 12px;
   right: 12px;
