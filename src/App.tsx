@@ -125,6 +125,31 @@ function PictureView({ word }: { word: Word }) {
           }}
         >
           {c.overlay.map((f, index) => {
+            if (f === "word" || f === "meaning") {
+              if (
+                c.overlay
+                  .slice(0, index)
+                  .some((field) => field === "word" || field === "meaning")
+              )
+                return null;
+              return (
+                <OverlayRow key="word-meaning" className="overlay-word-meaning">
+                  {c.overlay.includes("word") && word.word}
+                  {c.overlayIpa && (
+                    <span className="overlay-ipa">
+                      {c.overlay.includes("word") && " · "}
+                      英式 {word.ipa.uk} · 美式 {word.ipa.us}
+                    </span>
+                  )}
+                  {c.overlay.includes("meaning") && (
+                    <>
+                      {(c.overlay.includes("word") || c.overlayIpa) && " · "}
+                      {word.meaning}
+                    </>
+                  )}
+                </OverlayRow>
+              );
+            }
             if (f.startsWith("collocation.")) {
               if (
                 c.overlay
@@ -144,24 +169,15 @@ function PictureView({ word }: { word: Word }) {
                 </OverlayRow>
               );
             }
-            const Row = f === "word" ? OverlayRow : "p";
-            return (
-              <Row key={f}>
-                {fieldText(word, f)}
-                {f === "word" && c.overlayIpa && (
-                  <span className="overlay-ipa">
-                    {" "}
-                    · 英式 {word.ipa.uk} · 美式 {word.ipa.us}
-                  </span>
-                )}
-              </Row>
-            );
+            return <p key={f}>{fieldText(word, f)}</p>;
           })}
-          {c.overlayIpa && !c.overlay.includes("word") && (
-            <p className="overlay-ipa">
-              英式 {word.ipa.uk} · 美式 {word.ipa.us}
-            </p>
-          )}
+          {c.overlayIpa &&
+            !c.overlay.includes("word") &&
+            !c.overlay.includes("meaning") && (
+              <p className="overlay-ipa">
+                英式 {word.ipa.uk} · 美式 {word.ipa.us}
+              </p>
+            )}
         </div>
       )}
       {c.reveal && !revealed && (
