@@ -1,6 +1,16 @@
 # 测试记录与真机验收
 
-更新日期：2026-10-18（日本时间）。自动测试结果与设备实测严格分开。
+更新日期：2026-10-19（日本时间）。自动测试结果与设备实测严格分开。
+
+## 2026-10-19 List 13 / List 14 词库同步
+
+- 版本 1.1.2（versionCode 4），List 13 从 26 词扩为 50 词，新增 List 14 共 46 词；总计 14 个 List、696 词、696 张图片。
+- List 13 / List 14 的 JSON 与 96 张图片逐字节对比上游提交 `8562fe1cd9a932899a9506510b3ab1223efa3d65`，完全一致。
+- 一键构建通过：资源校验无错误、无警告、无缺图；TypeScript、ESLint、Vitest 6 项、Android 原生单元测试 13 项、Android Lint、应用与仪器测试 APK 编译通过。原生测试任务复用已有通过结果。
+- Playwright 四种手机/平板横竖屏视口共 20 项通过。
+- APK 内 manifest、14 个 List、696 张图片共 711 个引用逐文件 SHA-256 校验通过。
+- `apksigner verify --print-certs` 通过，证书 SHA-256 为 `3da6d225c23c9f41ea2ca5dc4a18e41a07fc8142e872db07b69edfdbaa3dce49`，与更新前本地 APK 一致；`aapt dump badging` 确认 versionName=1.1.2、versionCode=4、minSdk=26、targetSdk=35。
+- `adb devices` 无连接设备，本次未执行真机安装、播放和仪器测试。APK 与校验和位于本地 `release/`，按既有规则忽略、不提交二进制。
 
 ## 已执行的检查
 

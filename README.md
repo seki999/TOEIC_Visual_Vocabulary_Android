@@ -2,6 +2,8 @@
 
 独立的 Android 手机/平板词汇学习项目，源自 [Web 版](https://github.com/seki999/toeic-visual-vocabulary)。使用 React 19、TypeScript、Vite、Zustand、Capacitor 和 Kotlin。没有改造原 Web 仓库。
 
+当前词库包含 **14 个 List、696 个单词及图片**，已同步 Web 版 List 13、List 14（2026-10-19）。当前版本 **1.1.2（versionCode 4）**。
+
 当前可构建 **Debug APK**，未配置正式 Release 签名。真机 30 分钟常亮、锁屏和耳机测试尚未执行，不能据构建成功宣称这些设备行为已验收。
 
 ## 使用

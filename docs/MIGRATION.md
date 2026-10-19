@@ -4,6 +4,8 @@
 
 本次读取的源版本：`b07e33dee1b9c834c3e333b0ce38af7194af307f`。原仓库只克隆到本地忽略目录 `.upstream-web/` 供阅读，未修改或推送。Android 版本在当前独立仓库开发。
 
+2026-10-19 词库同步来源：`8562fe1cd9a932899a9506510b3ab1223efa3d65`。原样同步 List 13（50 词）、List 14（46 词）、对应图片与 manifest；总计 14 个 List、696 词及 696 张图片。
+
 | 分类 | 来源/模块 | Android 处理 |
 |---|---|---|
 | 直接复用 | `src/types.ts` | Word、Picture、List、Manifest、Field、fieldText、language、asset 保持兼容 |
